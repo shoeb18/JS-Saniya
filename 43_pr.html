@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    i am start of this container(outer)
+    <div class="container">
+      i am start of this container(inner)
+      <div id="first">i am the first element</div>
+      i am end of this container(inner)
+    </div>
+    i am end of this container(outer)
+  </body>
+  <script>
+    let a = document.getElementsByTagName("div")[0];
+    //a.innerHTML = a.innerHTML + '<h1>Hello world</h1>';
+
+    let div = document.createElement("div");
+    div.innerHTML = "<h1>Hello World!</h1>";
+    //a.appendChild(div);
+
+    // .appendchild karne par hello world ke upar aajayga text.
+    //document.body.a.appendChild(div); // ye bhi kar sakte .
+    // isse ek child append hojayga ek element creat hojayga
+    // aur isse hum forloops ko use me le sakte !
+
+    //a.append(div)
+    // .append karne par hello world ke upar aajayga text.
+
+    //a.prepend (div);
+    // prepend karne par ye container se bahar dalega dono sentence ko .
+
+    //a.before(div);
+    // .before hello world dalega to wahi magar container se bahar kar dega .
+
+    //a.after(div)
+    // node.after container ke baad hello world ko print karega. end of container aur outer se pehle.
+
+    a.replaceWith(div);
+ // a.replacewith se container hi ud jayga. aur uske bahar ke sectence print hojayge . 
+ </script>
+</body>
+</html>

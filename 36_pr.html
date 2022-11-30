@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>searching the dom</title>
+    <style>
+        .box{
+            height: 380px;
+            width: 300px;
+            border: 2px solid red;
+        
+        }
+        .img{
+            height: 150px;
+            width: 300px;
+            
+        }
+        .btn{
+            height: 30px;
+            width: 90px;
+            border-radius: 4px;
+            justify-content: center;
+            margin: auto;
+        }
+        
+        
+        .para{
+            text-align: center;
+
+        }
+       .boxes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 34px;
+       } 
+        .box{
+            margin-left: 33px;
+        }
+</style>
+</head>
+<body>
+    <div class="boxes">
+    <div class="box">
+        <img class="img" src="img.jpg" alt="" srcset="">
+        <p id="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, sit qui nobis aliquam magnam ducimus repudiandae minima recusandae dolorem odit ut dignissimos incidunt eligendi accusamus dolore officiis animi et excepturi quia exercitationem repellendus? Necessitatibus </p>
+        <button id="btn1" class="btn">Click here</button>
+    </div>
+    <div class="box">
+        <img class="img" src="img.jpg" alt="" srcset="">
+        <p id="para2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, sit qui nobis aliquam magnam ducimus repudiandae minima recusandae dolorem odit ut dignissimos incidunt eligendi accusamus dolore officiis animi et excepturi quia exercitationem repellendus? Necessitatibus </p>
+        <button  class="btn" >Click here</button>
+    </div>
+    <div class="box">
+        <img class="img" src="img.jpg" alt="" srcset="" name="search">
+        <p id="para3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, sit qui nobis aliquam magnam ducimus repudiandae minima recusandae dolorem odit ut dignissimos incidunt eligendi accusamus dolore officiis animi et excepturi quia exercitationem repellendus? Necessitatibus </p>
+        <button id="btn3" class="btn">Click here</button>
+    </div>
+    </div>
+</body>
+<script src="36_pr.js"></script>
+</html>
